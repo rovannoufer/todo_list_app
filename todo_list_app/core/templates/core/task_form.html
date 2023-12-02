@@ -1,0 +1,8 @@
+<h2>Rovannoufer</h2>
+<br>
+<a href="{% url 'tasks' %}"> Go back </a>
+<form method="post" action="">
+     {% csrf_token %}
+     {{ form.as_p }}
+     <input type="submit" value="submit">
+</form>
